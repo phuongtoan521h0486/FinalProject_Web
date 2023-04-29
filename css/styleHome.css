@@ -1,0 +1,237 @@
+.first-item {
+    margin-top: 15px;
+
+
+}
+
+.first-item h2 {
+    text-align: justify;
+}
+
+#main-text {
+    background-color: #737884;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.Cpr-text {
+    background-color: rgb(52, 52, 54);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: small;
+}
+
+#si {
+    border: blue solid 0.7px;
+    border-radius: 9px;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+body {
+    background-color: rgb(16, 16, 16);
+   
+}
+#film{
+    padding-bottom: 50px;
+}
+
+video {
+    object-fit:contain;
+}
+
+
+/* rating star */
+.rating {
+  width: 400px;
+}
+.rating > * {
+  float: right;
+}
+@-webkit-keyframes pulse {
+  50% {
+    color: #5e5e5e;
+    text-shadow: 0 0 15px #777777;
+  }
+}
+@keyframes pulse {
+  50% {
+    color: #5e5e5e;
+    text-shadow: 0 0 15px #777777;
+  }
+}
+.rating label {
+  height: 40px;
+  width: 20%;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+.rating label:nth-of-type(5):after {
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+.rating label:nth-of-type(4):after {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.rating label:nth-of-type(3):after {
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+}
+.rating label:nth-of-type(2):after {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+.rating label:nth-of-type(1):after {
+  -webkit-animation-delay: 0.05s;
+          animation-delay: 0.05s;
+}
+.rating label:after {
+  transition: all 0.4s ease-out;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  content: "☆";
+  color: #444;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 80px;
+  -webkit-animation: 1s pulse ease;
+          animation: 1s pulse ease;
+}
+.rating label:hover:after {
+  color: #5e5e5e;
+  text-shadow: 0 0 15px #5e5e5e;
+}
+.rating input {
+  display: none;
+}
+.rating input:checked + label:after,
+.rating input:checked ~ label:after {
+  content: "★";
+  color: #F9BF3B;
+  text-shadow: 0 0 20px #F9BF3B;
+}
+
+.rating {
+  margin-top: -10px;
+}
+
+
+/* comment-box */
+
+.post-comment .list{
+    background-color: rgb(49, 49, 49);
+    border-radius: 6px;
+    box-shadow: 0 2px 2px gray;
+
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.comment-session {
+    width: 650px;
+    height: auto;
+    margin: 0 auto;
+    float: left;
+}
+
+.list .post-comment {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.post-comment .list .user{
+    display: flex;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.post-comment .list .user img{
+    height: 38px;
+    width: 38px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.comment-session .name {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.post-comment .list .day {
+    font-size: 12px;
+}
+
+.post-comment .comment {
+    padding: 0 0 15px 58px;
+}
+
+
+
+.comment-box {
+    padding: 10px;
+    overflow: hidden;
+    background-color: rgb(49, 49, 49);
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.comment-box .user {
+    display: flex;
+    width: min-content;
+}
+
+.comment-box .user-image img{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.comment-box textarea {
+    background: #eee;
+    width: -webkit-fill-available;
+    margin: 10px 0;
+    padding: 10px;
+    resize: inherit;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 0 0.5px #0003;
+
+}
+
+.comment-box textarea:focus-visible {
+    box-shadow: inset 0 0 0 1px rgb(255, 123, 0);
+    outline: none;
+}
+
+.comment-box .comment-submit {
+    float: right;
+    padding: 6px 10px;
+    border: none;
+    background-color: none;
+    cursor: pointer;
+    
+}
+
+.comment {
+  color: white;
+  font-weight: 400;
+}
+
+.name {
+  color: white;
+  font-weight: bold;
+}
+
+.day {
+  color:white;
+}
+

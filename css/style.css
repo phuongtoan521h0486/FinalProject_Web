@@ -1,0 +1,155 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    width: 150px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.row {
+    width: 900px;
+    height: 700px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(50% + 120px));
+    
+}
+
+.text p {
+    color: white;
+    font-size: 20px;
+    
+}
+
+.side-image {
+    background-image: url(image/movieLogin.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 0px 5px 5px 0;
+    height: 100%;
+}
+
+.wrapper {
+    background-image: url(image/netfilx.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0 20px 0 20px;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.input-box {
+    width: 330px;
+    box-sizing: border-box;
+}
+
+.input-box header {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
+    
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+label {
+    color: white;
+}
+
+.signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 0 10px 0 10px;
+    margin-top: 20px;
+}
+
+.input-field {
+    background-color: rgb(49, 49, 49);
+    border-color: black;
+    color: white;
+}
+
+.btn {
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.btn-danger {
+    background-color: rgb(210, 47, 39);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    background-color: rgb(69, 69, 69);
+    color: white;
+}
+
+.register {
+    display: none;
+}
+
+
+@media screen and (max-width: 992px) {
+    .side-image {
+        display: none;
+    }
+
+    .register {
+        display:inline-block;
+        color: white;
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    img {
+        display: none;
+    }
+}
+
+header {
+    font-weight: bold;
+    font-size: 40px;
+    
+}
+
+/* home */
+
